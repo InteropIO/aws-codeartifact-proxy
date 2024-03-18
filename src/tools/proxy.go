@@ -137,6 +137,7 @@ func ProxyInit() {
 
 	proxy.ModifyResponse = ProxyResponseHandler()
 
+	http.handleFunc("/health", func(http.ResponseWriter, *http.Request){}).Methods(http.MethodGet)
 	http.HandleFunc("/", ProxyRequestHandler(proxy))
 	err = http.ListenAndServe(":"+port, nil)
 	if err != nil {
