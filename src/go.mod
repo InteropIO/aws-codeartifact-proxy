@@ -1,4 +1,4 @@
-module github.com/sktan/aws-codeartifact-proxy
+module github.com/InteropIO/aws-codeartifact-proxy
 
 go 1.18
 
