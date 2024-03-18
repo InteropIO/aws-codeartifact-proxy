@@ -2,7 +2,7 @@ package main
 
 import (
 	// Should this be called tools? There isn't really much going on here...
-	"github.com/sktan/aws-codeartifact-proxy/tools"
+	"github.com/InteropIO/aws-codeartifact-proxy/tools"
 )
 
 func main() {
